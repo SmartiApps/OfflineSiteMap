@@ -1,0 +1,310 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\OfflineSiteMap.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_LOGO           ICON                    "res\\iconLogo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 212, 126
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About OfflineSiteMap"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDI_ICON_LOGO,IDC_STATIC,14,14,21,20
+    LTEXT           "Smart Offline SiteMap Generator",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2012 Smart Price Deal Softwares Ltd",IDC_STATIC,17,80,168,8
+    DEFPUSHBUTTON   "OK",IDOK,75,96,50,14,WS_GROUP
+    LTEXT           "contactus@smartpricedeal.com",IDC_ST_EMAIL,73,42,105,12
+    LTEXT           "www.smartpricedeal.com",IDC_ST_WEB,73,62,100,13
+    LTEXT           "Freeware, Version ",IDC_STATIC,47,29,64,9
+    LTEXT           "",IDC_ST_VER,114,28,17,8
+    LTEXT           "Website:",IDC_STATIC,22,62,30,13
+    LTEXT           "E-Mail:",IDC_STATIC,22,42,22,12
+END
+
+IDD_OFFLINESITEMAP_DIALOG DIALOGEX 0, 0, 379, 342
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Smart Offline Sitemap Generator"
+MENU IDR_TOP_MENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_CMB_URLS,85,15,247,49,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Open",IDC_BTN_OPENFOLDER,336,34,27,14
+    PUSHBUTTON      "Save",IDC_BTN_SAVE,336,52,27,14
+    CONTROL         "Change Frequency",IDC_CHK_FREQUENCY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,83,77,77,10
+    CONTROL         "Priority",IDC_CHK_PRIORITY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,185,77,39,10
+    CONTROL         "Date",IDC_CHK_LAST_MODIFIED_DATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,259,77,31,10
+    COMBOBOX        IDC_CMB_CHNG_FREQ,84,95,85,80,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMB_PRIORITY,185,93,48,70,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_DATETIME_MODIFIED,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,259,92,63,15
+    CONTROL         "Time",IDC_CHK_LAST_MODIFIED_TIME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,94,135,27,10
+    CONTROL         "Use System Time",IDC_RD_CURRENTTIME,"Button",BS_AUTORADIOBUTTON,135,135,66,10
+    CONTROL         "Time",IDC_RD_TIME,"Button",BS_AUTORADIOBUTTON,135,154,34,10
+    CONTROL         "",IDC_DT_LASTMODIFIED_TIME,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,179,152,63,15
+    LTEXT           "Time zone:",IDC_STATIC,258,137,36,8
+    COMBOBOX        IDC_CMB_TIMEZONE,257,152,65,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Include Folder(s) Name",IDC_CHK_FOLDER_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,90,178,210,12
+    EDITTEXT        IDC_ED_EXCLUDEFOLDERS,85,194,245,42,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_EXCLUDEFILES,85,253,245,42,ES_MULTILINE | ES_AUTOHSCROLL
+    PUSHBUTTON      "Generate SiteMap",IDC_BTN_GENERATE_SITEMAP,66,304,65,19
+    PUSHBUTTON      "Save Website",IDC_BTN_SAVE_SETTINGS,137,304,65,19
+    PUSHBUTTON      "Delete Website",IDC_BTN_DEL_SETTINGS,208,304,65,19
+    PUSHBUTTON      "E&xit",IDCANCEL,279,304,65,19
+    LTEXT           "Website(URL):",IDC_STATIC,16,17,64,8
+    LTEXT           "Local folder Path:",IDC_STATIC,16,34,62,8
+    EDITTEXT        IDC_ED_FOLDERPATH,85,34,247,12,ES_AUTOHSCROLL
+    LTEXT           "Exclude Files:",IDC_STATIC,16,258,62,8
+    LTEXT           "Exclude Folders:",IDC_STATIC,16,196,62,8
+    GROUPBOX        "Last Modified Time Settings",IDC_ST_GRP_TIME,87,117,245,54,WS_GROUP
+    LTEXT           "Sitemap Path:",IDC_STATIC,19,55,62,12
+    EDITTEXT        IDC_ED_SITEMAP_PATH,85,54,247,12,ES_AUTOHSCROLL | WS_DISABLED
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,0,1
+ PRODUCTVERSION 1,1,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x9L
+#else
+ FILEFLAGS 0x8L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Smart Price Deal Softwares Ltd "
+            VALUE "FileDescription", "Creates Sitemap Offline"
+            VALUE "FileVersion", "1.0"
+            VALUE "InternalName", "OfflineSiteMap.exe"
+            VALUE "LegalCopyright", " (c) Smart Price Deal Softwares Ltd.  All rights reserved."
+            VALUE "LegalTrademarks", "www.smartpricedeal.com"
+            VALUE "OriginalFilename", "OfflineSiteMap.exe"
+            VALUE "PrivateBuild", "1.0"
+            VALUE "ProductName", "Smart Offline Sitemap Generator"
+            VALUE "ProductVersion", "1.0.1.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_OFFLINESITEMAP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 372
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 335
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_TOP_MENU MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "About",                       ID_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_OFFLINESITEMAP_DIALOG DLGINIT
+BEGIN
+    IDC_CMB_CHNG_FREQ, 0x403, 7, 0
+0x6c61, 0x6177, 0x7379, "\000" 
+    IDC_CMB_CHNG_FREQ, 0x403, 7, 0
+0x6f68, 0x7275, 0x796c, "\000" 
+    IDC_CMB_CHNG_FREQ, 0x403, 6, 0
+0x6164, 0x6c69, 0x0079, 
+    IDC_CMB_CHNG_FREQ, 0x403, 7, 0
+0x6577, 0x6b65, 0x796c, "\000" 
+    IDC_CMB_CHNG_FREQ, 0x403, 8, 0
+0x6f6d, 0x746e, 0x6c68, 0x0079, 
+    IDC_CMB_CHNG_FREQ, 0x403, 7, 0
+0x6579, 0x7261, 0x796c, "\000" 
+    IDC_CMB_CHNG_FREQ, 0x403, 6, 0
+0x656e, 0x6576, 0x0072, 
+    IDC_CMB_PRIORITY, 0x403, 4, 0
+0x2e30, 0x0031, 
+    IDC_CMB_PRIORITY, 0x403, 4, 0
+0x2e30, 0x0032, 
+    IDC_CMB_PRIORITY, 0x403, 4, 0
+0x2e30, 0x0033, 
+    IDC_CMB_PRIORITY, 0x403, 4, 0
+0x2e30, 0x0034, 
+    IDC_CMB_PRIORITY, 0x403, 4, 0
+0x2e30, 0x0035, 
+    IDC_CMB_PRIORITY, 0x403, 4, 0
+0x2e30, 0x0036, 
+    IDC_CMB_PRIORITY, 0x403, 4, 0
+0x2e30, 0x0037, 
+    IDC_CMB_PRIORITY, 0x403, 4, 0
+0x2e30, 0x0038, 
+    IDC_CMB_PRIORITY, 0x403, 4, 0
+0x2e30, 0x0039, 
+    IDC_CMB_PRIORITY, 0x403, 4, 0
+0x2e31, 0x0030, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "img\\Folder-Add.bmp"
+IDB_BITMAP2             BITMAP                  "res\\Mail.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About OfflineSiteMap..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\OfflineSiteMap.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
